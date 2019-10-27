@@ -1,0 +1,182 @@
+﻿<div class="content">
+    <div class="left left-100">
+        <p class="zag-left"><i class="icon-home grey-home"></i>&nbsp;&nbsp;—&nbsp;&nbsp; @Html.ActionLink("  навигация по навыкам — обучение ", "stat", "Home")</p>
+
+        <div class="img-man">
+            <img class="man" src="../img/man.jpg" />
+        </div>
+        <div class="map">
+            <div class="top-link" onclick="ondown()"></div>
+            <div class="middle-link" onclick="ondown()"></div>
+            <div class="bottom-link" onclick="ondown()"></div>
+
+            <div class="map-content" onclick="ondown()"></div>
+        </div>
+
+
+
+    </div>
+    <div class="right svernuto">
+        <p class="zag">статистика <span class="top">топ 10 игроков</span></p>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td class="left-number">1</td>
+                    <td class="image-td"><img src="img/1.png" /></td>
+                    <td>
+                        Сидоров, Деннис
+                        <span class="little-text new-lt">герой,  990 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">2</td>
+                    <td class="image-td"><img src="img/2.png" /></td>
+                    <td>
+                        Петров, Джузеппе
+                        <span class="little-text new-lt">герой,  890 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">3</td>
+                    <td class="image-td"><img src="img/3.png" /></td>
+                    <td>
+                        Иванов, Алексей
+                        <span class="little-text new-lt">герой,  777 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">4</td>
+                    <td class="image-td"><img src="img/4.png" /></td>
+                    <td>
+                        Константинов, Збигнев
+                        <span class="little-text new-lt">герой,  670 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">5</td>
+                    <td class="image-td"><img src="img/5.png" /></td>
+                    <td>
+                        Бониперти, Джампьеро
+                        <span class="little-text new-lt">герой,  568 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">6</td>
+                    <td class="image-td"><img src="img/6.png" /></td>
+                    <td>
+                        Брайтнер, Пауль
+                        <span class="little-text new-lt">герой,  480 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">7</td>
+                    <td class="image-td"><img src="img/7.png" /></td>
+                    <td>
+                        Бутрагеньо, Эмилио
+                        <span class="little-text new-lt">герой,  333 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">8</td>
+                    <td class="image-td"><img src="img/8.png" /></td>
+                    <td>
+                        Буффон, Джанлуиджи
+                        <span class="little-text new-lt">герой,  222 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">9</td>
+                    <td class="image-td"><img src="img/9.png" /></td>
+                    <td>
+                        Бэнкс, Гордон
+                        <span class="little-text new-lt">герой,  100 баллов</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-number">10</td>
+                    <td class="image-td"><img src="img/10.png" /></td>
+                    <td>
+                        Ван Бастен, Марко
+                        <span class="little-text new-lt">герой,  99 баллов</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bottom-block">
+            <p>команда <span class="icon"> <i class="podskazka">создание команды доступно на 7 уровне</i></span></p>
+            <p>статистика</p>
+        </div>
+
+
+        <div class="strelka">
+            
+        </div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+<link rel='stylesheet' href='~/css/style.css' type='text/css' />
+<script src="~/js/modernizr-2.6.2.min.js"></script>
+
+<!-- amCharts javascript code -->
+<script type="text/javascript">
+    AmCharts.makeChart("chartdiv",
+        {
+            "type": "pie",
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "titleField": "category",
+            "valueField": "column-1",
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+                "enabled": true,
+                "align": "center",
+                "markerType": "circle"
+            },
+            "titles": [],
+            "dataProvider": [
+                {
+                    "category": "category 1",
+                    "column-1": "5",
+                    "column-2": 1
+                },
+                {
+                    "category": "category 2",
+                    "column-1": "5",
+                    "column-2": 75
+                },
+                {
+                    "category": "category 3",
+                    "column-1": "5",
+                    "column-2": 85
+                },
+                {
+                    "category": "category 4",
+                    "column-1": "5",
+                    "column-2": null
+                },
+                {
+                    "category": "category 5",
+                    "column-1": "5",
+                    "column-2": null
+                }
+            ]
+        }
+    );
+    function ondown() {
+        window.location.href = "/Home/Details";
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $('.top-link').on('mouseover', function () {
+        $('.map-content').toggleClass("hovered");
+    });
+</script>
+

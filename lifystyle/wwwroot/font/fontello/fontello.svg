@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="group-168" unicode="&#xe802;" d="M1445-150l-715 502 715 498z m-730 0l-715 502 715 498z" horiz-adv-x="1445" />
+
+<glyph glyph-name="path-5" unicode="&#xe803;" d="M0 776v-852a74 74 0 0 1 110-64l758 433a74 74 0 0 1-1 128l-758 420a74 74 0 0 1-109-65z" horiz-adv-x="905" />
+
+<glyph glyph-name="path-6" unicode="&#xe804;" d="M813 554v-646a59 59 0 0 0-59-58h-695a59 59 0 0 0-59 58v883a59 59 0 0 0 59 59h458v-255a41 41 0 0 1 42-41z" horiz-adv-x="813" />
+
+<glyph glyph-name="group-26" unicode="&#xe806;" d="M989 790v-880a60 60 0 0 0-89-52l-456 252v472l455 260a60 60 0 0 0 90-52z m-669-664h-260a60 60 0 0 0-60 61v328a60 60 0 0 0 60 60h260z" horiz-adv-x="989" />
+
+<glyph glyph-name="subtraction-1" unicode="&#xe807;" d="M733-84h-667v558l341 288 326-288v-558z m-451 288v-272h235v272z" horiz-adv-x="799" />
+
+<glyph glyph-name="lock" unicode="&#xe808;" d="M854 475h-62v83c0 161-131 292-292 292s-292-131-292-292v-83h-62c-12 0-21-9-21-21v-521c0-46 37-83 83-83h584c46 0 83 37 83 83v521c0 12-9 21-21 21z m-292-435c1-6-1-12-5-16-4-5-9-7-15-7h-84c-6 0-11 2-15 7-4 4-6 10-5 16l13 118c-22 16-34 40-34 67 0 46 37 83 83 83s83-37 83-83c0-27-12-51-34-67l13-118z m105 435h-334v83c0 92 75 167 167 167s167-75 167-167v-83z" horiz-adv-x="1000" />
+
+<glyph glyph-name="metal-paper-clip-" unicode="&#xe809;" d="M190-92c-45 0-88 18-120 50-67 67-67 175 0 241l526 527c43 42 99 66 159 66 60 0 117-24 159-66 43-43 66-99 66-159 0-60-23-117-66-159l-414-415c-13-12-33-12-45 0-13 13-13 33 0 45l414 415c31 31 48 71 48 114 0 43-17 83-48 114-30 30-71 47-114 47-43 0-83-17-114-47l-526-527c-42-41-42-109 0-151 40-40 110-40 151 0l353 354c10 10 15 23 15 37 0 13-5 26-15 36-20 20-53 20-73 0l-241-242c-13-12-33-12-45 0-13 13-13 33 0 45l241 242c45 45 118 45 163 0 22-22 34-51 34-81 0-31-12-61-34-82l-353-354c-33-32-75-50-121-50z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

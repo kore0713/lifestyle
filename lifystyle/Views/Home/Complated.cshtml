@@ -1,0 +1,150 @@
+﻿
+<div class="content">
+    <div class="left">
+
+        <p class="zag-left">
+            <i class="icon-home"></i>&nbsp;&nbsp;—&nbsp;&nbsp; <a href="http://htmlbook.ru/example/knob.html">навигация по навыкам — обучение</a>
+
+           
+        </p>
+
+        <div class="cn-wrapper opened-nav" id="cn-wrapper">
+            <ul>
+                <li>
+                    <span class="name-li">
+                        <a href="/Home/Graph"></a>
+                        обеспеченность
+                        <span class="dn">| Монетизировать экспертизу<br>+ распределить 3 балла опыта</span>
+                    </span>
+                </li>
+                <li>
+                    <span class="name-li">отношения<span class="icon-new"></span></span>
+                </li>
+                <li>
+                    <span class="name-li">окружение<span class="icon-new"></span></span>
+                </li>
+                <li>
+                    <span class="name-li">здоровье<span class="icon-new"></span></span>
+                </li>
+                <li>
+                    <span class="name-li">яркость жизни<span class="icon-new"></span></span>
+                </li>
+            </ul>
+
+            <div class="circle">
+                <img src=" ../img/man.jpg">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="right">
+        <div style="color:red">
+            Личный кабинет
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="left-td">имя</td>
+                    <td class="right-td">Алексей Иванов</td>
+                </tr>
+                <tr>
+                    <td class="left-td">звание</td>
+                    <td class="right-td">красавчик</td>
+                </tr>
+                <tr>
+                    <td class="left-td">уровень</td>
+                    <td class="right-td"><span class="red">4</span></td>
+                </tr>
+                <tr>
+                    <td class="left-td">рейтинг</td>
+                    <td class="right-td"><span class="red">777</span> из <span class="red">1435</span></td>
+                </tr>
+                <tr>
+                    <td class="left-td">награды</td>
+                    <td class="right-td">
+                        самый быстрый
+                        <span class="little-text">выполнил 10 заданий за 2 суток</span>
+                        решительный
+                        <span class="little-text">держался режима питания 2 недели</span>
+                        без балласта
+                        <span class="little-text">сбросил вес до нормы ИМТ</span>
+                        лидер
+                        <span class="little-text">собрал команду из 5 человек</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left-td">опыт</td>
+                    <td class="right-td">не распределено <span class="red">3</span> балла</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bottom-block">
+            <p>команда <span class="icon"> <i class="podskazka">создание команды доступно на 7 уровне</i></span></p>
+
+            @Html.ActionLink("статистика", "stat", "Home")
+
+        </div>
+
+
+        <div class="strelka">
+            
+        </div>
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+<link rel='stylesheet' href='~/css/style.css' type='text/css' />
+<script src="~/js/modernizr-2.6.2.min.js"></script>
+
+<!-- amCharts javascript code -->
+<script type="text/javascript">
+    AmCharts.makeChart("chartdiv",
+        {
+            "type": "pie",
+            "balloonText": "[[title]]<br><span style='font-size:14px'><b>[[value]]</b> ([[percents]]%)</span>",
+            "titleField": "category",
+            "valueField": "column-1",
+            "allLabels": [],
+            "balloon": {},
+            "legend": {
+                "enabled": true,
+                "align": "center",
+                "markerType": "circle"
+            },
+            "titles": [],
+            "dataProvider": [
+                {
+                    "category": "category 1",
+                    "column-1": "5",
+                    "column-2": 1
+                },
+                {
+                    "category": "category 2",
+                    "column-1": "5",
+                    "column-2": 75
+                },
+                {
+                    "category": "category 3",
+                    "column-1": "5",
+                    "column-2": 85
+                },
+                {
+                    "category": "category 4",
+                    "column-1": "5",
+                    "column-2": null
+                },
+                {
+                    "category": "category 5",
+                    "column-1": "5",
+                    "column-2": null
+                }
+            ]
+        }
+    );
+</script>

@@ -1,0 +1,97 @@
+﻿<div class="content">
+    <div class="left left-100">
+        <p class="zag-left"><i class="icon-home grey-home"></i>&nbsp;&nbsp;—&nbsp;&nbsp;навигация по навыкам — <span class="red">обучение</span></p>
+
+        <div class="left-text" id="1" style="display:none;">
+            <div class="kurator">
+                <span class="kurator-span">куратор</span>
+                <img src="../img/kurator.png" />
+            </div>
+            <div class="message">
+                <span class="message-span">Привет! высылаю задание.</span>
+                <span class="block-block video-b"><i class="bb-icon"></i> видео-задание</span>
+            </div>
+        </div>
+        <div class="left-text" id="2" style="display:none;">
+            <div class="kurator">
+                <span class="kurator-span">куратор</span>
+                <img src="../img/kurator.png" />
+            </div>
+            <div class="message">
+                <span class="message-span">еще задание</span>
+                <span class="block-block audio-b"><i class="bb-icon"></i> аудио-задание</span>
+            </div>
+        </div>
+        <div class="left-text" id="3" style="display:none;">
+            <div class="kurator">
+                <span class="kurator-span">куратор</span>
+                <img src="../img/kurator.png" />
+            </div>
+            <div class="message">
+                <span class="message-span">последнее задание</span>
+                <span class="block-block zadanie-b"><i class="bb-icon"></i> задание</span>
+            </div>
+        </div>
+        <div class="right-text" id="4" style="display:none;">
+            <div class="message">
+                <span class="message-span">Привет! высылаю задание.</span>
+                <span class="block-block file-b"><i class="bb-icon"></i> файл</span>
+            </div>
+            <div class="kurator">
+                <span class="kurator-span">студент</span>
+                <img src="../img/man.jpg" />
+            </div>
+        </div>
+
+        <div class="left-text" id="5" style="display:none;">
+            <div class="kurator">
+                <span class="kurator-span">куратор</span>
+                <img src="../img/kurator.png" />
+            </div>
+            <div class="message">
+                <span class="message-span"> Поздравляю, ты прошел финальное задание.Уровень 4 пройден. </span>
+            </div>
+        </div>
+
+        <div class="left-text last">
+            <textarea name="comment" cols="40" rows="3"></textarea></p>
+            <button type="button" id="RemoveKurses" class="btn btn-primary">Отправить</button>
+            @Html.ActionLink("Проверить награды", "Complated", "Home")
+        </div>
+        
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script type="text/javascript" src="https://www.amcharts.com/lib/3/pie.js"></script>
+<link rel='stylesheet' href='~/css/style.css' type='text/css' />
+<script src="~/js/modernizr-2.6.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+@section Scripts{
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            window.setTimeout(explode, 2000);
+
+            window.setTimeout(explode2, 4000);
+
+        });
+        $('#RemoveKurses').click(function (e) {
+                       $('#4').css('display', 'block');
+                        $('#5').css('display', 'block');
+        });
+        function explode() {
+            console.log("sadasdasd");
+            $('#1').css('display', 'block');
+            $('#2').css('display', 'block');
+
+        }
+        function explode2() {
+                        $('#3').css('display', 'block');
+        }
+
+    </script>
+}
